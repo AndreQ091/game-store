@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import cartReducer from './slices/cartSlice';
+import gameReducer from "./slices/gameSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    cart: cartReducer,
+    game: gameReducer,
   },
 });
 
